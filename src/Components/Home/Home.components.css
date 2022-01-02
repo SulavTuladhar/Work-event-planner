@@ -1,0 +1,447 @@
+body{
+    overflow-x: hidden;
+}
+/* Hero-container */
+.hero-container{
+    height: 89vh;
+    width: 100vw;
+    background: url(https://infinityhospitalitygroup.com/wp-content/uploads/2020/05/IH_Home-page_11.jpg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #fff;
+}
+.contact-button{
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 8rem;
+    height: 6.8vh;
+    color: #432818;
+    cursor: pointer;
+    transition: all 0.3s;
+    margin-top: 4vh;
+}
+.contact-button:hover{
+    background-color: #432818;
+    color: #fff;
+}
+
+/* About us */
+.about-us{
+    background-color: #f3eee8;
+    height: 68vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.about-us-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80vw;
+}
+.left-content, .right-content{
+    height: 30vh;
+    flex: 1;
+}
+.right-content{
+    margin-left: 1vw;
+}
+
+/* Services Page */
+.services-page{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 80vh;
+    text-align: center;
+    flex-wrap: wrap;
+}
+.service-container{
+    width: 24rem;
+}
+.service-container img{
+    width: 20rem;
+    height: 20rem;
+}
+
+/* Descritption Page */
+.description-page{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: #000;
+    padding-left: 4vw;
+    padding-right: 4vw;
+}
+.description-left{
+    width: 48vw;
+    height: 64vh;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+.description-right{
+    margin-left: 3vw;
+    height: 64vh;
+    width: 64vw;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.details-container{
+    width: 24vw;
+    height: 32vh;
+}
+.small-logo{
+    background-color: #d0b8ac;
+    height: 8vh;
+    width: 4vw;
+    border-radius: 0 0 2rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+/* Quotes Page */
+.quotes-page{
+    background-color: #f3eee8;
+    height: 100vh;
+    width: 100vw;
+    padding-left: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.quotes-page h1{
+    font-size: 5vw;
+}
+.image-side{
+    height: 80vh;
+    width: 30rem;
+    position: relative;
+}
+.image-side img{
+    width: 20vw;
+}
+.second-img{
+    border: 10px solid #f3eee8;
+    position: absolute;
+    top: 20vh;
+    left: 10vw;
+}
+.quote-side{
+    width: 40vw;
+    margin-left: -12vw;
+}
+
+/* Prcing Page */
+.pricing-page{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.pricing-heading{
+    width: 65vw;
+    margin-top: 16vh;
+}
+.pricing-heading h1{
+    color: #432818;
+    font-size: 10vh;
+}
+.pricing-heading p{
+    margin-top: 4vh;
+}
+.price-wrapper{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.price-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    width: 20rem;
+    padding-top: 8vh;
+    text-align: center;
+    border-radius: 10rem 10rem 0 0 ;
+    border: 1px solid #f8f4f1;
+    box-shadow: 8px 6px 10px rgb(243, 243, 243);
+    transition: 1s all;
+}
+.price-container h1{
+    color: #d0b8ac;
+    transition: 1s all;
+}
+.price-container:hover{
+    background-color: #f3eee8;
+    color: #432818;
+}
+.price-container:hover h1{
+    color: #432818;
+}
+.price-container:hover .book-now{
+    color: #432818;
+}
+.price-container span{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.tick-container{
+    display: flex;
+    align-items: center;
+    height: 6vh;
+    width: 18vw;
+    margin-bottom: 1vh;
+    margin-left: 1.2vw;
+}
+.tick-container p{
+    margin: 1vh;
+}
+.book-now{
+    width: 8vw;
+    color: #d0b8ac;
+    cursor: pointer;
+    transition: 1s all;
+}
+/* Testimonials page */
+.testimonials-page{
+    height: 100vh;
+    width: 96vw;
+    border-radius: 1rem;
+    background-color: #f3eee8;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.testimonials-container{
+    width: 80vw;
+    height: 60vh;
+    border: 1px solid #f3eadf;
+    border-radius: 1rem;
+    box-shadow: 4px 4px 8px rgb(223, 222, 222);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 18vh;
+}
+.avatar{
+    border-radius: 50%;
+    position: absolute;
+    bottom: -8vh;
+    /* left: 48%; */
+}
+.ratings-avatar{
+    position: relative;
+    text-align: center;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.ratings{
+    display: flex;
+}
+
+
+/* Lookbook Page */
+.lookbook-page{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 80vh;
+}
+.img-container{
+    width: 60vw;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-evenly;
+    height: 70vh;
+}
+.first-image{
+    height: 26rem;
+}
+.second-image{
+    height: 24rem;
+}
+.third-image{
+    height: 22rem;
+}
+.lookbook-content{
+    margin-top: 16vh;
+    padding-top: 2vh;
+    padding-left: 2vw;
+    height: 26vw;
+    width: 28vw;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+}
+.button{
+    border: 1px solid #432818;
+    border-radius: 0.4rem;
+    color: #432818;
+    width: 10rem;
+    height: 4rem;
+    padding-top: 2vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s;
+}
+.button:hover{
+    background-color: #432818;
+    color: #fff;
+}
+
+/* Footer Page */
+.footer-page{
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #f3eee8;
+}
+.logo-description-side{
+    height: 30vh;
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.links-side{
+    height: 30vh;
+    width: 40vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.links{
+    height: 28vh;
+}
+.links a{
+    text-decoration: none;
+    color: #432818;
+
+}
+
+/* Terms and condition div */
+.terms-conditions{
+    display: flex;  
+    align-items: center;
+    justify-content: space-between;
+    height: 8vh;
+    background-color: #f3eee8;
+}
+.terms-conditions span{
+    display: flex;
+    justify-content: space-between;
+    width: 20vw;
+}
+.termsandconditions{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Responsive */
+@media only screen and (max-width: 1920px){
+    .services-page{
+        height: 120vh;
+    }
+}
+@media only screen and (max-width: 1399px) {
+    .services-page{
+        height: 130vh;
+    }
+}
+@media only screen and (max-width: 1200px) {
+.services-page{
+        height: 140vh;
+}
+.lookbook-content{
+    background-color: rgba(255, 255, 255, 0.795);
+}
+.description-page{
+    height: 120vh;
+    flex-direction: column;
+}
+.description-right{
+    margin-right: 0;
+    margin-top: 8vh;
+}
+.image-side{
+    width: 38vw;
+    height: 44vh;
+}
+.image-side img{
+    width: 16vw;
+}
+       
+}
+@media only screen and (max-width: 992px) {
+    .lookbook-content{
+        background-color: (255, 255, 255, 0.795);
+        height: 46vh;
+    }
+    .services-page{
+        height: 140vh;
+    }
+    .price-wrapper{
+        height: 180vh;
+    }
+ } 
+
+ @media only screen and (max-width: 768px) {
+    .quotes-page h1{
+        font-size: 6vw;
+    }      
+    .services-page{
+        height: 280vh;
+    }
+}
+@media only screen and (max-width: 576px) {
+    .lookbook-page{
+        background-color: rosybrown;
+        position: relative;
+    }
+    .lookbook-content{
+        background-color: rgba(255, 255, 255, 0.856);
+        position: absolute;
+        width: 48vw;
+        height: 38vh;
+    }
+    .about-us{
+        height: 100vh;
+    }
+    .left-content, .right-content{
+        margin-top: -16vh;
+    }
+    .description-page{
+        padding-bottom: 8vh;
+        height: 138vh;
+    }
+    .pricing-page{
+        height: 400vh;
+    }
+}
+

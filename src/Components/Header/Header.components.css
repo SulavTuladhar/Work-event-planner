@@ -1,0 +1,49 @@
+.here{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1vh;
+    height: 10vh;
+    width: 100vw;
+}
+.logo{
+    flex: 1;
+}
+.nav-items{
+    flex: 2;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    cursor: pointer;
+    /* background-color: rosybrown; */
+}
+.btn-container{
+    flex: 1;
+    cursor: pointer;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+}
+.contact-btn{
+    height: 2.8rem;
+    width: 8rem;
+    padding-top: 4px;
+    border: 1px solid #432818;
+    color: #432818;
+    border-radius: 0.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.4s;
+}
+.contact-btn:hover{
+    background-color:  #432818;
+    color: #fff;
+}
+
+/* Responsive */
+@media only screen and (max-width: 576px) {
+   .nav-items{
+       display: none;
+   }
+}
