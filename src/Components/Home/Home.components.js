@@ -17,7 +17,7 @@ export class HomeComponents extends Component {
                 </div>
 
                 {/* About Us Page */}
-                <div className='container-fluid about-us'>
+                <div className='container-fluid about-us' id='about-us'>
                     <h1> About Us </h1>
                     <div className='about-us-content'> 
                         <div className='left-content'>
@@ -30,7 +30,7 @@ export class HomeComponents extends Component {
                 </div>
 
                 {/* Services Page */}
-                <div className='container-fluid services-page'> 
+                <div className='container-fluid services-page' id='home'> 
 
                     <div className='container service-container'>
                         <img src='./images/birthday.jpg' alt='birthday-img' className='img-thumbnail' /> 
@@ -73,7 +73,7 @@ export class HomeComponents extends Component {
                     <div className='container description-right'>
                         <div className='container details-container'>
                             <div className='small-logo' >
-                                <img src='./images/wand.svg' alt='wand-svg' className='img-thumbnail' />
+                                <img src='./images/wand.svg' alt='wand-svg' className='img-thumbnail svg' />
                             </div>
                             <h4> Decoration </h4>
                                 <p>
@@ -83,7 +83,7 @@ export class HomeComponents extends Component {
                         </div>
                         <div className='container details-container'>
                         <div className='small-logo' >
-                                <img src='./images/sppon.svg' alt='spoon-svg' className='img-thumbnail' />
+                                <img src='./images/sppon.svg' alt='spoon-svg' className='img-thumbnail svg' />
                             </div>
                             <h4> Chatering </h4>
                             <p>
@@ -94,7 +94,7 @@ export class HomeComponents extends Component {
                         
                         <div className='container details-container'>
                         <div className='small-logo' >
-                                <img src='./images/camera.svg' alt='camera-svg' className='img-thumbnail' />
+                                <img src='./images/camera.svg' alt='camera-svg' className='img-thumbnail svg' />
                             </div>
                             <h4> Photo </h4>
                             <p>
@@ -104,7 +104,7 @@ export class HomeComponents extends Component {
                         </div>
                         <div className='container details-container'>
                         <div className='small-logo' >
-                                <img src='./images/mic.svg' alt='mic-svg' className='img-thumbnail' />
+                                <img src='./images/mic.svg' alt='mic-svg' className='img-thumbnail svg' />
                             </div>
                             <h4> Entertainment </h4>
                             <p>
@@ -127,7 +127,7 @@ export class HomeComponents extends Component {
             </div>
 
             {/* Pricing page */}
-            <div className='container-fluid pricing-page'>
+            <div className='container-fluid pricing-page' id='services'>
                 <div className='pricing-heading'>
                 <h1> Pricing </h1>
                 <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -137,7 +137,7 @@ export class HomeComponents extends Component {
                 
                 <div className='container-fluid price-wrapper'>
                 <div className='container price-container'> 
-                    <h1> birthday </h1>
+                    <h1 className='pricing-h1'> birthday </h1>
                     <h1> Rs 1000 </h1>
                     <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
                     <span className='tick-container'> <img src='./images/tick.svg' alt='tick-svg' /> <p> Duis aute irure dolor in </p> </span>
@@ -146,7 +146,7 @@ export class HomeComponents extends Component {
                     <span className='book-now'> <h6> Book now &#8594; </h6> </span>
                 </div>
                 <div className='container price-container'>
-                <h1> Event </h1>
+                <h1 className='pricing-h1'> Event </h1>
                     <h1> Rs 2000 </h1>
                     <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
                     <span className='tick-container'> <img src='./images/tick.svg' alt='tick-svg' /> <p> Duis aute irure dolor in </p> </span>
@@ -156,7 +156,7 @@ export class HomeComponents extends Component {
                     
                 </div>
                 <div className='container price-container'> 
-                <h1> Weddings </h1>
+                <h1 className='pricing-h1'> Weddings </h1>
                     <h1> Rs 9000 </h1>
                     <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
                     <span className='tick-container'> <img src='./images/tick.svg' alt='tick-svg' /> <p> Duis aute irure dolor in </p> </span>
@@ -166,7 +166,7 @@ export class HomeComponents extends Component {
                     
                 </div>
                 <div className='container price-container'> 
-                <h1> Festival </h1>
+                <h1 className='pricing-h1'> Festival </h1>
                     <h1> Rs 6000 </h1>
                     <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
                     <span className='tick-container'> <img src='./images/tick.svg' alt='tick-svg' /> <p> Duis aute irure dolor in </p> </span>

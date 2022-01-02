@@ -27,7 +27,7 @@
 .contact-btn{
     height: 2.8rem;
     width: 8rem;
-    padding-top: 4px;
+    padding-top: 1vh;
     border: 1px solid #432818;
     color: #432818;
     border-radius: 0.4rem;
@@ -40,7 +40,10 @@
     background-color:  #432818;
     color: #fff;
 }
-
+a{
+    text-decoration: none;
+    color: #432818;
+}
 /* Responsive */
 @media only screen and (max-width: 576px) {
    .nav-items{

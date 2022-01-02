@@ -1,6 +1,33 @@
 body{
     overflow-x: hidden;
 }
+
+/* Setting up global font families */
+.hero-container h1,
+.hero-container h4{
+    font-family: "lora",sans-serif;
+}
+.hero-container h1{
+    font-size: 8vh;
+    font-weight: bold;
+}
+.hero-container h4{
+    margin-top: 1vh;
+}
+h1, h3, h4{
+    font-family: "lora",sans-serif;
+}
+.hero-container h5, p ,h6{
+    font-family: "DM Sans", sans-serif;
+}
+.quotes-page h1{
+    font-weight: bold;
+    color: #432818;
+}
+.pricing-h1{
+    font-weight: bold;
+}
+
 /* Hero-container */
 .hero-container{
     height: 89vh;
@@ -21,8 +48,9 @@ body{
     height: 6.8vh;
     color: #432818;
     cursor: pointer;
-    transition: all 0.3s;
+    transition: all 0.4s;
     margin-top: 4vh;
+    padding-top: 1vh;
 }
 .contact-button:hover{
     background-color: #432818;
@@ -109,7 +137,10 @@ body{
     justify-content: center;
     margin-bottom: 1rem;
 }
-
+.svg{
+    background-color: transparent;
+    border: none;
+}
 /* Quotes Page */
 .quotes-page{
     background-color: #f3eee8;
@@ -241,6 +272,8 @@ body{
     flex-direction: column;
     justify-content: space-between;
     padding-top: 18vh;
+    /* background-color: aqua; */
+    margin-top: -4vh;
 }
 .avatar{
     border-radius: 50%;
