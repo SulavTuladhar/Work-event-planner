@@ -1,24 +1,18 @@
 .here{
     display: flex;
     align-items: center;
-    justify-content: center;
-    margin-top: 1vh;
+    justify-content: space-between;
     height: 10vh;
-    width: 100vw;
-}
-.logo{
-    flex: 1;
+    width: 80vw;
 }
 .nav-items{
-    flex: 2;
     display: flex;
     align-items: center;
     justify-content: space-around;
     cursor: pointer;
-    /* background-color: rosybrown; */
+    width: 30vw;
 }
 .btn-container{
-    flex: 1;
     cursor: pointer;
     display: flex;
     align-self: center;

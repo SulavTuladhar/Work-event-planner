@@ -33,11 +33,22 @@ h1, h3, h4{
     height: 89vh;
     width: 100vw;
     background: url(https://infinityhospitalitygroup.com/wp-content/uploads/2020/05/IH_Home-page_11.jpg);
+    /* min-height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; */
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     color: #fff;
+}
+.small-hero-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 .contact-button{
     background-color: #fff;
@@ -85,12 +96,12 @@ h1, h3, h4{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    height: 80vh;
+    height: 20vh;
     text-align: center;
     flex-wrap: wrap;
 }
 .service-container{
-    width: 24rem;
+    width: 18rem;
 }
 .service-container img{
     width: 20rem;
@@ -124,13 +135,13 @@ h1, h3, h4{
     flex-wrap: wrap;
 }
 .details-container{
-    width: 24vw;
+    width: 20.488rem;
     height: 32vh;
 }
 .small-logo{
     background-color: #d0b8ac;
-    height: 8vh;
-    width: 4vw;
+    height: 3rem;
+    width: 2rem;
     border-radius: 0 0 2rem 2rem;
     display: flex;
     align-items: center;
@@ -203,6 +214,7 @@ h1, h3, h4{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-top: 4vh;
     height: 80vh;
     width: 20rem;
     padding-top: 8vh;
@@ -261,25 +273,21 @@ h1, h3, h4{
     align-items: center;
     justify-content: space-around;
 }
+.testimonials-wrapper{
+    padding-top: 8vh;
+    text-align: center;
+    border-radius: 1rem;
+    box-shadow: 4px 4px 8px rgb(223, 222, 222);
+}
 .testimonials-container{
     width: 80vw;
     height: 60vh;
-    border: 1px solid #f3eadf;
-    border-radius: 1rem;
-    box-shadow: 4px 4px 8px rgb(223, 222, 222);
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: space-between;
     padding-top: 18vh;
-    /* background-color: aqua; */
     margin-top: -4vh;
-}
-.avatar{
-    border-radius: 50%;
-    position: absolute;
-    bottom: -8vh;
-    /* left: 48%; */
 }
 .ratings-avatar{
     position: relative;
@@ -374,7 +382,9 @@ h1, h3, h4{
 .links a{
     text-decoration: none;
     color: #432818;
-
+}
+.social-media img{
+    width: 4vw;
 }
 
 /* Terms and condition div */
@@ -399,7 +409,7 @@ h1, h3, h4{
 /* Responsive */
 @media only screen and (max-width: 1920px){
     .services-page{
-        height: 120vh;
+        height: 100vh;
     }
 }
 @media only screen and (max-width: 1399px) {
@@ -433,14 +443,30 @@ h1, h3, h4{
 }
 @media only screen and (max-width: 992px) {
     .lookbook-content{
-        background-color: (255, 255, 255, 0.795);
+        background-color: rgba(255, 255, 255, 0.89);
+        position: absolute;
+        width: 48vw;
         height: 46vh;
+        background-color: red;
+    }
+    .about-us{
+        height: 80vh;
     }
     .services-page{
-        height: 140vh;
+        height: 400vh;
+        margin-top: 10vh;
+        background-color: red;
+    }
+    .description-page{
+        display: flex;
+        justify-content: center;
+        height :532vh;
     }
     .price-wrapper{
         height: 180vh;
+    }
+    .termsandconditions h6{
+        font-size: small;
     }
  } 
 
@@ -449,18 +475,24 @@ h1, h3, h4{
         font-size: 6vw;
     }      
     .services-page{
-        height: 280vh;
+        height: 100vh;
     }
 }
 @media only screen and (max-width: 576px) {
+    .services-page{
+        background-color: #432818;
+        height: 300vh;
+    }
+    .description-page{
+        height: 100vh;
+    }
     .lookbook-page{
-        background-color: rosybrown;
         position: relative;
     }
     .lookbook-content{
-        background-color: rgba(255, 255, 255, 0.856);
+        background-color: rgba(255, 255, 255, 0.89);
         position: absolute;
-        width: 48vw;
+        width: 60vw;
         height: 38vh;
     }
     .about-us{
@@ -476,5 +508,93 @@ h1, h3, h4{
     .pricing-page{
         height: 400vh;
     }
+    .logo-description-side h1{
+        font-size: x-larger;
+    }
+    .logo-description-side p{
+        font-size: small;
+    }
+    .links h4{
+        font-size: medium;
+    }
+    .links h6{
+        font-size: small;
+    }
+    .termsandconditions h6{
+        font-size: x-small;
+    }
+    .footer-page{
+        height: 40vh;
+    }
 }
-
+@media only screen and (max-width: 375px) {
+ 
+    .small-hero-container h1{
+        font-size: 12vw;
+    }
+    .small-hero-container h4{
+        font-size: 5vw;
+    }
+    .about-us{
+        height: 150vh;
+    }
+    .about-us h1{
+        margin-top: -60vh;
+    }
+    .about-us-content{
+        margin-top: -28vh;
+    }
+    .description-right{
+        margin-top: -80vh;
+    }
+    .description-page{
+        height: 260vh;
+    }
+    .quotes-page{
+        margin-top: 4vh;
+    }
+    .lookbook-page{
+        margin-top: 4vh;
+    }
+    .lookbook-content{
+        width: 80vw;
+        height: 48vh;
+    }
+    .logo-description-side h1{
+        font-size: larger;
+    }
+    .logo-description-side p{
+        margin-top: -6vh;
+    }
+    .social-media img{
+        margin-top: -10vh;
+        width: 8vw;
+    }
+    .links-side{
+        flex-wrap: wrap;
+    }
+    .last-link{
+        height: 14vh;
+        width: 38vw;
+        align-items: center;
+        justify-content: space-between;
+        display: flex;
+        margin-top: -10vh;
+    }
+    .testimonials-page{
+        margin-top: 10vh;
+    }
+    .footer-page{
+        height: 60vh;
+    }
+    .footer-page h1{
+        font-size: 6vw;
+        margin-bottom: 8vh;
+    }
+    .social-media{
+        margin-top: 4vh;
+    }
+    .links{
+        margin-bottom: 6vh;
+    }
+}

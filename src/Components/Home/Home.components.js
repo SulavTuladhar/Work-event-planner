@@ -2,31 +2,52 @@ import React, { Component } from 'react';
 import { HeaderComponents } from '../Header/Header.components';
 import './Home.components.css';
 
+// Importing Third party Libary
+import { motion } from 'framer-motion'; // animation libary 
+import { Carousel } from 'react-responsive-carousel'; // React responsive caraousel
+
+// Importing third party CSS
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // // React responsive caraosel CSS
+
 export class HomeComponents extends Component {
+ 
     render(){
+        const variants = {
+            visible: {opacity: 1, y: 0},
+            hidden: { opacity: 0, y: 40}
+        }
         return(
             <div>
                 <HeaderComponents />
                 {/* Hero-container */}
                 <div className='container-fluid hero-container'>
-                    <h1> Introduction </h1>
-                    <h4> Let's Plab Your Next Event Together </h4>
-                    <div className='contact-button'> 
-                        <h5> Contact </h5>
-                    </div>
+                    <motion.div 
+                        // animate= {{ x: [0,100,0]}}
+                        initial= "hidden"
+                        animate="visible"
+                        transition={{ease: 'easeOut', duration: 2}}
+                        variants={variants}
+                        className='container small-hero-container'
+                        >
+                            <h1> Introduction </h1>
+                            <h4> Let's Plab Your Next Event Together </h4>
+                            <div className='contact-button'> 
+                                    <h5> Contact </h5>
+                            </div>
+                    </motion.div>
                 </div>
 
                 {/* About Us Page */}
                 <div className='container-fluid about-us' id='about-us'>
-                    <h1> About Us </h1>
-                    <div className='about-us-content'> 
-                        <div className='left-content'>
-                            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur excepteur sint occaecat cupidata. </p>    
+                        <h1> About Us </h1>
+                        <div className='about-us-content'> 
+                            <div className='left-content'>
+ consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cill                                <p> Lorem ipsum dolor sit amet,um dolore eu fugiat nulla pariatur excepteur sint occaecat cupidata. </p>    
+                            </div>
+                            <div className='right-content'> 
+                            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                            </div>
                         </div>
-                        <div className='right-content'> 
-                        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-                        </div>
-                    </div>
                 </div>
 
                 {/* Services Page */}
@@ -182,19 +203,64 @@ export class HomeComponents extends Component {
             <div className='container-fluid testimonials-page'>
             
             <h1> Testimonials </h1>
-            <div className='container testimonials-container'>
+
+            <Carousel className='container  testimonials-wrapper'>
+                <div className=' testimonials-container'>
                 <h6> Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 </h6>
-                <div className='container-fluid ratings-avatar'>  
-                <span className='ratings'> 
-                    <h6> Star </h6>
-                    <h6> Star </h6>
-                    <h6> Star </h6>
-                    <h6> Star </h6>
-                </span>
-                <img src='./images/avatar.jpg' className='avatar' alt='avatar' />
+                        <div className='container-fluid ratings-avatar'>
+                        <span className='ratings'> 
+                            <h6> Star </h6>
+                            <h6> Star </h6>
+                            <h6> Star </h6>
+                            <h6> Star </h6>
+                        </span>
+                        </div>
+                   
                 </div>
-            </div>
+
+                <div className=' testimonials-container'>
+                <h6> Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </h6>
+                        <div className='container-fluid ratings-avatar'>
+                        <span className='ratings'> 
+                            <h6> Star </h6>
+                            <h6> Star </h6>
+                            <h6> Star </h6>
+                            <h6> Star </h6>
+                        </span>
+                        </div>
+                   
+                </div>
+
+                <div className=' testimonials-container'>
+                <h6> Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </h6>
+                        <div className='container-fluid ratings-avatar'>
+                        <span className='ratings'> 
+                            <h6> Star </h6>
+                            <h6> Star </h6>
+                            <h6> Star </h6>
+                            <h6> Star </h6>
+                        </span>
+                        </div>
+                   
+                </div>
+
+                <div className=' testimonials-container'>
+                <h6> Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </h6>
+                        <div className='container-fluid ratings-avatar'>
+                        <span className='ratings'> 
+                            <h6> Star </h6>
+                            <h6> Star </h6>
+                            <h6> Star </h6>
+                            <h6> Star </h6>
+                        </span>
+                        </div>
+                   
+                </div>
+            </Carousel>
 
             </div>
 
@@ -245,12 +311,15 @@ export class HomeComponents extends Component {
                         <h6> About </h6>
                         <h6> Contact </h6>
                     </div>
-                    <div className='links'> 
+                    <div className='links last-link'> 
                         <h4> Contact </h4>
+                        <span>
                         <h6> Contact </h6>
                         <h6> Services </h6>
                         <h6> Details </h6>
                         <h6> About </h6>
+                        </span>
+
                     </div>
                 </div>
 
