@@ -96,9 +96,10 @@ h1, h3, h4{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    height: 20vh;
+    height: 100vh;
     text-align: center;
     flex-wrap: wrap;
+    /* background-color: yellow; */
 }
 .service-container{
     width: 18rem;
@@ -117,6 +118,7 @@ h1, h3, h4{
     color: #000;
     padding-left: 4vw;
     padding-right: 4vw;
+    /* background-color: red; */
 }
 .description-left{
     width: 48vw;
@@ -407,6 +409,12 @@ h1, h3, h4{
 }
 
 /* Responsive */
+/* @media only screen and (max-width: 1920px){
+    .services-page{
+        height: 100vh;
+    }
+} */
+/* Responsive */
 @media only screen and (max-width: 1920px){
     .services-page{
         height: 100vh;
@@ -453,14 +461,13 @@ h1, h3, h4{
         height: 80vh;
     }
     .services-page{
-        height: 400vh;
-        margin-top: 10vh;
+        height: 200vh;
         background-color: red;
     }
     .description-page{
         display: flex;
         justify-content: center;
-        height :532vh;
+        height : 269vh;
     }
     .price-wrapper{
         height: 180vh;
@@ -468,8 +475,8 @@ h1, h3, h4{
     .termsandconditions h6{
         font-size: small;
     }
- } 
-
+ }  
+ 
  @media only screen and (max-width: 768px) {
     .quotes-page h1{
         font-size: 6vw;
@@ -481,10 +488,11 @@ h1, h3, h4{
 @media only screen and (max-width: 576px) {
     .services-page{
         background-color: #432818;
-        height: 300vh;
+        height: 310vh;
     }
     .description-page{
-        height: 100vh;
+        height: 200vh;
+        background-color: yellow;
     }
     .lookbook-page{
         position: relative;
@@ -501,10 +509,7 @@ h1, h3, h4{
     .left-content, .right-content{
         margin-top: -16vh;
     }
-    .description-page{
-        padding-bottom: 8vh;
-        height: 138vh;
-    }
+   
     .pricing-page{
         height: 400vh;
     }
