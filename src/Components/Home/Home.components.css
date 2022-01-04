@@ -28,20 +28,34 @@ h1, h3, h4{
     font-weight: bold;
 }
 
+/* Practise */
+.feature{
+    padding: 50px 0;
+}
+
+@media screen and (max-width: 768px) {
+    .feature {
+        flex-direction: column;
+        width: 100%;
+        margin: auto;
+    }
+}
+@media screen and (max-width: 476px) {
+    .feature {
+        flex-direction: column;
+        width: 100%;
+        margin: auto;
+      }
+      .feature-content {
+        width: 100%;
+      }
+    }
+
+
 /* Hero-container */
 .hero-container{
-    height: 89vh;
-    width: 100vw;
+    height: 100vh;
     background: url(https://infinityhospitalitygroup.com/wp-content/uploads/2020/05/IH_Home-page_11.jpg);
-    /* min-height: 100vh;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover; */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
     color: #fff;
 }
 .small-hero-container{
@@ -69,77 +83,9 @@ h1, h3, h4{
 }
 
 /* About us */
-.about-us{
-    background-color: #f3eee8;
-    height: 68vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-}
-.about-us-content{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 80vw;
-}
-.left-content, .right-content{
-    height: 30vh;
-    flex: 1;
-}
-.right-content{
-    margin-left: 1vw;
-}
-
 /* Services Page */
-.services-page{
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    height: 100vh;
-    text-align: center;
-    flex-wrap: wrap;
-    /* background-color: yellow; */
-}
-.service-container{
-    width: 18rem;
-}
-.service-container img{
-    width: 20rem;
-    height: 20rem;
-}
 
 /* Descritption Page */
-.description-page{
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    color: #000;
-    padding-left: 4vw;
-    padding-right: 4vw;
-    /* background-color: red; */
-}
-.description-left{
-    width: 48vw;
-    height: 64vh;
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    justify-content: center;
-}
-.description-right{
-    margin-left: 3vw;
-    height: 64vh;
-    width: 64vw;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-.details-container{
-    width: 20.488rem;
-    height: 32vh;
-}
 .small-logo{
     background-color: #d0b8ac;
     height: 3rem;
@@ -153,7 +99,8 @@ h1, h3, h4{
 .svg{
     background-color: transparent;
     border: none;
-}
+} 
+
 /* Quotes Page */
 .quotes-page{
     background-color: #f3eee8;
@@ -409,36 +356,13 @@ h1, h3, h4{
 }
 
 /* Responsive */
-/* @media only screen and (max-width: 1920px){
-    .services-page{
-        height: 100vh;
-    }
-} */
-/* Responsive */
-@media only screen and (max-width: 1920px){
-    .services-page{
-        height: 100vh;
-    }
-}
 @media only screen and (max-width: 1399px) {
-    .services-page{
-        height: 130vh;
-    }
+  
 }
 @media only screen and (max-width: 1200px) {
-.services-page{
-        height: 140vh;
-}
+
 .lookbook-content{
     background-color: rgba(255, 255, 255, 0.795);
-}
-.description-page{
-    height: 120vh;
-    flex-direction: column;
-}
-.description-right{
-    margin-right: 0;
-    margin-top: 8vh;
 }
 .image-side{
     width: 38vw;
@@ -457,18 +381,6 @@ h1, h3, h4{
         height: 46vh;
         background-color: red;
     }
-    .about-us{
-        height: 80vh;
-    }
-    .services-page{
-        height: 200vh;
-        background-color: red;
-    }
-    .description-page{
-        display: flex;
-        justify-content: center;
-        height : 269vh;
-    }
     .price-wrapper{
         height: 180vh;
     }
@@ -480,20 +392,9 @@ h1, h3, h4{
  @media only screen and (max-width: 768px) {
     .quotes-page h1{
         font-size: 6vw;
-    }      
-    .services-page{
-        height: 100vh;
     }
 }
 @media only screen and (max-width: 576px) {
-    .services-page{
-        background-color: #432818;
-        height: 310vh;
-    }
-    .description-page{
-        height: 200vh;
-        background-color: yellow;
-    }
     .lookbook-page{
         position: relative;
     }
@@ -503,9 +404,9 @@ h1, h3, h4{
         width: 60vw;
         height: 38vh;
     }
-    .about-us{
+    /* .about-us{
         height: 100vh;
-    }
+    } */
     .left-content, .right-content{
         margin-top: -16vh;
     }
@@ -540,7 +441,7 @@ h1, h3, h4{
     .small-hero-container h4{
         font-size: 5vw;
     }
-    .about-us{
+    /* .about-us{
         height: 150vh;
     }
     .about-us h1{
@@ -548,13 +449,7 @@ h1, h3, h4{
     }
     .about-us-content{
         margin-top: -28vh;
-    }
-    .description-right{
-        margin-top: -80vh;
-    }
-    .description-page{
-        height: 260vh;
-    }
+    } */
     .quotes-page{
         margin-top: 4vh;
     }

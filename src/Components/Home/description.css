@@ -1,0 +1,44 @@
+.description-page{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: #000;
+    padding-left: 4vw;
+    padding-right: 4vw;
+    /* background-color: red; */
+}
+.description-left{
+    width: 48vw;
+    height: 64vh;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+.description-right{
+    margin-left: 3vw;
+    height: 64vh;
+    width: 64vw;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.details-container{
+    width: 20.488rem;
+    height: 32vh;
+}
+.small-logo{
+    background-color: #d0b8ac;
+    height: 3rem;
+    width: 2rem;
+    border-radius: 0 0 2rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+.svg{
+    background-color: transparent;
+    border: none;
+}

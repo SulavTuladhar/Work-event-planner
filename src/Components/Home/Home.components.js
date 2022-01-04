@@ -20,7 +20,7 @@ export class HomeComponents extends Component {
             <div>
                 <HeaderComponents />
                 {/* Hero-container */}
-                <div className='container-fluid hero-container'>
+                <div className='hero-container d-flex'>
                     <motion.div 
                         // animate= {{ x: [0,100,0]}}
                         initial= "hidden"
@@ -38,7 +38,7 @@ export class HomeComponents extends Component {
                 </div>
 
                 {/* About Us Page */}
-                <div className='container-fluid about-us' id='about-us'>
+                {/* <div className='container-fluid about-us' id='about-us'>
                         <h1> About Us </h1>
                         <div className='about-us-content'> 
                             <div className='left-content'>
@@ -48,10 +48,20 @@ export class HomeComponents extends Component {
                             <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
                             </div>
                         </div>
+                </div> */}
+                <div className='about-us-page mt-5 mb-5'>
+                    <div className='container p-5 bg-primary'>
+                        <h1 className='text-center'> About Us </h1>
+                        <div className='row row-cols-2'>
+                            <div className='bg-dark '></div>
+                            <div></div>
+                        </div>
+                       </div>
                 </div>
 
+
                 {/* Services Page */}
-                <div className='container-fluid services-page' id='home'> 
+                {/* <div className='container-fluid services-page' id='home'> 
 
                     <div className='container service-container'>
                         <img src='./images/birthday.jpg' alt='birthday-img' className='img-thumbnail' /> 
@@ -77,10 +87,161 @@ export class HomeComponents extends Component {
                         <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
                     </div>
 
+                </div> */}
+                <div className='services-page'>
+
+                    <div className='container'>
+                {/* Row start */}
+                        <div className='row g-4'>
+
+                {/* COL 1 */}
+                            <div className='col-md-6 col-lg-3'>
+                                <div className='card border-0'>
+                                    <div className='card-body text-center'>
+                                    <img src='./images/wedding.jpg' alt='wedding-img' className='img-thumbnail' /> 
+                        <h3> Weddings </h3>
+                        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                    
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div className='col-md-6 col-lg-3'>
+                                <div className='card border-0'>
+                                    <div className='card-body text-center'>
+                                    <img src='./images/wedding.jpg' alt='wedding-img' className='img-thumbnail' /> 
+                        <h3> Weddings </h3>
+                        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                    
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div className='col-md-6 col-lg-3'>
+                                <div className='card border-0'>
+                                    <div className='card-body text-center'>
+                                    <img src='./images/wedding.jpg' alt='wedding-img' className='img-thumbnail' /> 
+                        <h3> Weddings </h3>
+                        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                    
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div className='col-md-6 col-lg-3'>
+                                <div className='card border-0'>
+                                    <div className='card-body text-center'>
+                                    <img src='./images/wedding.jpg' alt='wedding-img' className='img-thumbnail' /> 
+                        <h3> Weddings </h3>
+                        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                    
+                                    </div>
+                                </div>
+                            </div>
+                            {/* Row end */}
+                        </div>
+
+                    </div>
+
                 </div>
 
                 {/* Description Page */}
-                <div className='container-fluid description-page'>
+                
+<div className='description-page'>
+    <div className='container'>
+        <div className='row'>
+
+        {/* Right Container */}
+            <div className='
+                col-xl-5 col-sm-12
+                d-flex
+                justify-content-center
+                align-items-start
+                flex-column
+                pe-5
+            '>
+                    <h1> We Make Dreams <br /> Come True! </h1>
+                        <p> 
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+                            nisi ut aliquip ex ea commodo consequat 
+                        </p>
+            </div>
+            {/* Right container end  */}
+
+            {/* Left container start */}
+
+            <div className='
+                            col-xl-7 col-sm-12
+                            d-flex
+                            justify-container-center
+                            align-items-center
+                            flex-column
+            '>
+
+            <div className='right-container'>
+                <div className='row row-cols-2 feature'>
+
+                    <div className='d-flex flex-column feature-content'>
+                    <div className='small-logo' >
+                                <img src='./images/wand.svg' alt='wand-svg' className='img-thumbnail svg' />
+                            </div>
+                            <h4> Decoration </h4>
+                                <p>
+                                     Lorem ipsum dolor sit amet, 
+                                    consectetur adipiscing elit. 
+                                </p>
+                    </div>
+
+                    <div className='d-flex flex-column feature-content'>
+                    <div className='small-logo' >
+                                <img src='./images/wand.svg' alt='wand-svg' className='img-thumbnail svg' />
+                            </div>
+                            <h4> Decoration </h4>
+                                <p>
+                                     Lorem ipsum dolor sit amet, 
+                                    consectetur adipiscing elit. 
+                                </p>
+                    </div>
+
+                </div>
+                {/* Second row */}
+                <div className='row row-cols-2 feature'>
+                    <div className='d-flex flex-column feature-content'>
+                    <div className='small-logo' >
+                                <img src='./images/sppon.svg' alt='spoon-svg' className='img-thumbnail svg' />
+                            </div>
+                            <h4> Chatering </h4>
+                            <p>
+                                Lorem ipsum dolor sit amet, 
+                                consectetur adipiscing elit. 
+                            </p>
+                    </div>
+
+                    <div className='d-flex flex-column feature-content'>
+                    <div className='small-logo' >
+                                <img src='./images/sppon.svg' alt='spoon-svg' className='img-thumbnail svg' />
+                            </div>
+                            <h4> Chatering </h4>
+                            <p>
+                                Lorem ipsum dolor sit amet, 
+                                consectetur adipiscing elit. 
+                            </p>
+                    </div>
+                </div>
+            </div>
+
+            </div>
+            {/* Left container end */}
+        </div>
+
+
+    </div>
+
+</div>
+
+                {/* <div className='container-fluid description-page'>
                     <div className='container description-left'> 
                         <h1> We Make Dreams <br /> Come True! </h1>
                         <p> 
@@ -134,7 +295,8 @@ export class HomeComponents extends Component {
                             </p>
                         </div>
                     </div>
-                </div>
+                </div> */}
+
 
                 {/* Quotes Page */}
             <div className='container-fluid quotes-page'> 
