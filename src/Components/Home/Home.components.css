@@ -35,6 +35,22 @@ h1, h3, h4{
         width: 100%;
         margin: auto;
     }
+    .feature-content {
+        flex-direction: column;
+        width: 100%;
+        padding-bottom: 4vh;
+        margin: auto;
+        border: 1px solid rgb(230, 230, 230);
+        border-radius: 0.6rem;
+    }
+}
+@media screen and (max-width: 576px) {
+    .feature-content {
+        flex-direction: column;
+        width: 100%;
+        padding-bottom: 4vh;
+        margin: auto;
+      }
 }
 @media screen and (max-width: 476px) {
     .feature {

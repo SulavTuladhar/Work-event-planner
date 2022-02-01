@@ -29,8 +29,8 @@ export class HomeComponents extends Component {
                         variants={variants}
                         className='container small-hero-container'
                         >
-                            <h1> Introduction </h1>
-                            <h4> Let's Plab Your Next Event Together </h4>
+                            <h1> Event Planner </h1>
+                            <h4> Let's Plan Your Next Event Together </h4>
                             <div className='contact-button'> 
                                     <h5> Contact </h5>
                             </div>
@@ -150,7 +150,7 @@ export class HomeComponents extends Component {
                     <div className='right-container mt-5 col-sm-12'>
                         <div className='row row-cols-2 feature'>
 
-                            <div className='d-flex flex-column feature-content mt-2'>
+                            <div className='d-flex flex-column feature-content mt-2 '>
                                 <div className='small-logo' >
                                     <img src='./images/wand.svg' alt='wand-svg' className='img-thumbnail svg' />
                                 </div>
@@ -237,7 +237,7 @@ export class HomeComponents extends Component {
                     <div className='card border-here'>
                         <div className='card-body d-flex flex-column align-items-center'>
                         <h1 className='pricing-h1'> birthday </h1>
-                        <h1> Rs 1000 </h1>
+                        <h1> 100$ </h1>
                         <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
                         <span className='tick-container'> <img src='./images/tick.svg' alt='tick-svg' /> <p> Duis aute irure dolor in </p> </span>
                         <span className='tick-container'> <img src='./images/tick.svg' alt='tick-svg' /> <p> Sint occaecat cupidatat </p> </span>
@@ -252,7 +252,7 @@ export class HomeComponents extends Component {
                     <div className='card border-here'>
                         <div className='card-body d-flex flex-column align-items-center'>
                         <h1 className='pricing-h1'> Event </h1>
-                        <h1> Rs 2000 </h1>
+                        <h1> 200$ </h1>
                         <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
                         <span className='tick-container'> <img src='./images/tick.svg' alt='tick-svg' /> <p> Duis aute irure dolor in </p> </span>
                         <span className='tick-container'> <img src='./images/tick.svg' alt='tick-svg' /> <p> Sint occaecat cupidatat </p> </span>
@@ -267,7 +267,7 @@ export class HomeComponents extends Component {
                     <div className='card border-here'>
                         <div className='card-body d-flex flex-column align-items-center'>
                         <h1 className='pricing-h1'> Weddings </h1>
-                        <h1> Rs 9000 </h1>
+                        <h1> 900$ </h1>
                         <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
                         <span className='tick-container'> <img src='./images/tick.svg' alt='tick-svg' /> <p> Duis aute irure dolor in </p> </span>
                         <span className='tick-container'> <img src='./images/tick.svg' alt='tick-svg' /> <p> Sint occaecat cupidatat </p> </span>
@@ -282,7 +282,7 @@ export class HomeComponents extends Component {
                     <div className='card border-here'>
                         <div className='card-body d-flex flex-column align-items-center'>
                         <h1 className='pricing-h1'> Festival </h1>
-                        <h1> Rs 6000 </h1>
+                        <h1> 600$ </h1>
                         <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
                         <span className='tick-container'> <img src='./images/tick.svg' alt='tick-svg' /> <p> Duis aute irure dolor in </p> </span>
                         <span className='tick-container'> <img src='./images/tick.svg' alt='tick-svg' /> <p> Sint occaecat cupidatat </p> </span>
@@ -383,7 +383,7 @@ export class HomeComponents extends Component {
             
             <div className='container-fluid footer-page'> 
                 <div className='logo-description-side'> 
-                    <h1> Introduction </h1>
+                    <h1> Event Planner </h1>
                     <p> 
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, 
                         luctus nec ullamcorper mattis, pulvinar dapibus leo. 
@@ -431,7 +431,7 @@ export class HomeComponents extends Component {
                             <h6> Terms of Service </h6> 
                             <h6> Privacy Policy </h6> 
                         </span>
-                        <h6> © 2021 Introduction • All rights reserved </h6>
+                        <h6> © 2021 Event Planner • All rights reserved </h6>
                     </div>
                 </div>
 

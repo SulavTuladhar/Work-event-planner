@@ -18,7 +18,7 @@ export function HeaderComponents() {
                 variants={headerAni}
                 className='container-fluid here'
             >
-                    <div className='logo'> LOGO here  </div>
+                    <div className='logo'> <h4> <span style={{color: '#432818'}}> Event </span> <span style={{color: '#cebca6'}}> Planner </span> </h4> </div>
                     <div className='nav-items'>
                         <span> <a href='#about-us'> <h6> About Us </h6> </a> </span>
                         <span> <a href='#services'> <h6> Services </h6> </a> </span>
